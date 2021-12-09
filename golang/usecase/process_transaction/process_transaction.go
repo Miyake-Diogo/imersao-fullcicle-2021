@@ -1,7 +1,7 @@
 package process_transaction
 
 import (
-	"github.com/Miyake-Diogo/imersao-fullcicle-2021-gateway/domain/broker"
+	"github.com/Miyake-Diogo/imersao-fullcicle-2021-gateway/adapter/broker"
 	"github.com/Miyake-Diogo/imersao-fullcicle-2021-gateway/domain/entity"
 	"github.com/Miyake-Diogo/imersao-fullcicle-2021-gateway/domain/repository"
 )

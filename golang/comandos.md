@@ -20,8 +20,15 @@ $ go test ./...
 ```
 
 Instalar o mockgen -> [link](https://github.com/golang/mock)
+ou: `go install github.com/golang/mock/mockgen@latest`
 
 Execute o comando :
 ```bash
 $ mockgen -destination=domain/repository/mock/mock.go -source=domain/repository/repository.go
+```
+
+Para o segundo MockGen: 
+
+```bash
+$ mockgen -destination=adapter/broker/mock/mock.go -source=adapter/broker/interface.go
 ```
