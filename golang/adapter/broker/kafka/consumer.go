@@ -36,9 +36,7 @@ func (c *Consumer) Consume(msgChan chan *ckafka.Message) error {
 			msgChan <- msg
 		}
 
-		
 	}
-
 
 }
 

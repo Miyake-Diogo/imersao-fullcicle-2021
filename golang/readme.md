@@ -32,3 +32,16 @@ Para o segundo MockGen:
 ```bash
 $ mockgen -destination=adapter/broker/mock/mock.go -source=adapter/broker/interface.go
 ```
+
+Para acessar o container do kafka: 
+
+```
+$ docker exec -it kafka_kafka_1 bash
+
+# Após isso execute o comando
+$ kafka-console-producer --bootstrap-server=localhost:9092 --topic=transactions
+
+# para o consumer
+
+$ kafka-console-consumer --bootstrap-server=localhost:9092 --topic=transactions_result
+```
